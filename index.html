@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Mishra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e9b6f3.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 70px; 
+    }
+
+    body {
+      margin: 0;
+      font-family: "Alan Sans", sans-serif;
+      background-image: url("nandhu-kumar-t9UpW8MUmtw-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9999;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #ffcccc;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffcccc;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    }
+
+    .bigcard {
+      width: 80%;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(15px);
+      border-radius: 25px;
+      padding: 50px;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    }
+
+    .bigcard:hover {
+      transform: translateY(-5px) scale(1.02);
+      background-color: rgba(139, 0, 0, 0.5);
+      box-shadow: 0 15px 35px rgba(255, 50, 50, 0.5);
+    }
+
+    .bigcard h3 {
+      color: #ffe5e5;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    }
+
+    .bigcard p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #fff;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    }
+
+    /* Profiles Section */
+    #profiles {
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      margin-top: 40px;
+      width: 80%;
+      max-width: 1000px;
+    }
+
+    .profile-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      width: 220px;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      filter: invert(1);
+    }
+
+    .profile-card:hover {
+      transform: translateY(-10px);
+      background-color: rgba(139, 0, 0, 0.4);
+      box-shadow: 0 0 25px rgba(255, 100, 100, 0.5);
+    }
+
+    .profile-card h3 {
+      font-size: 1.3rem;
+      color: #ffdddd;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cards">About</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm <strong>Harsh Mishra</strong> — a tech enthusiast exploring everywhere and everything.</p>
+  </section>
+
+  <!-- PERSONALIZED CARDS -->
+  <section id="cards">
+    <h2>About Me</h2>
+
+    <div class="bigcard">
+      <h3>👋 Name</h3>
+      <p>Harsh Mishra</p>
+    </div>
+
+    <div class="bigcard">
+      <h3>🎓 Education</h3>
+      <p>BSc in Computer Science from BITS Pilani (via Scaler School of Technology)</p>
+    </div>
+
+    <div class="bigcard">
+      <h3>💻 Passion</h3>
+      <p>Doing Competitive Programming, learning AI, and exploring tech.</p>
+    </div>
+
+    <div class="bigcard">
+      <h3>🎮 Hobbies</h3>
+      <p>Gaming (especially Hollow Knight), coding, and experimenting with unique designs.</p>
+    </div>
+
+    <div class="bigcard">
+      <h3>🌍 Goal</h3>
+      <p>To create something world-changing.</p>
+    </div>
+  </section>
+
+  <!-- PROFILES -->
+  <section id="profiles">
+    <h2>Connect & Profiles</h2>
+    <div class="card-container">
+      <a href="https://codeforces.com/profile/burning_nature" target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codeforces.svg" alt="Codeforces">
+        <h3>Codeforces</h3>
+        <p>Competitive programming and problem solving.</p>
+      </a>
+
+      <a href="https://www.codechef.com/users/cute_goal_16" target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codechef.svg" alt="CodeChef">
+        <h3>CodeChef</h3>
+        <p>Algorithms, contests & data structure mastery.</p>
+      </a>
+
+      <a href="https://leetcode.com/u/Pridaz/" target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg" alt="LeetCode">
+        <h3>LeetCode</h3>
+        <p>Interview prep & problem-solving challenges.</p>
+      </a>
+    </div>
+  </section>
+    <section id="projects">
+          <h1>Some of my projects</h1>
+    <div class="card-container">
+      <a target="_blank" class="profile-card">
+        <img src="licensed-image (1).jpeg" alt="log1">
+        <h3>Image Recognition Engine</h3>
+        <p>Ever wonder how a computer sees? This AI demonstrates the power of computer vision by recognizing and categorizing objects in your images.</p>
+      </a>
+
+      <a target="_blank" class="profile-card">
+        <img src="licensed-image.jpeg" alt="log2">
+        <h3>Gesture Flap</h3>
+        <p>A touchless Flappy Bird clone. Guide the bird through pipes using only a simple finger gesture on camera.</p>
+      </a>
+
+      <a target="_blank" class="profile-card">
+        <img src="Gemini_Generated_Image_5rh9325rh9325rh9.png" alt="Coming Soon">
+        <h3>Work in Progress</h3>
+        <p>I'm hard at work on my next creation. I can't reveal everything just yet, but I can't wait to show you what I've been building. Keep an eye on this space!</p>
+      </a>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's collaborate or just talk tech!</p>
+    <div class="card-container">
+      <a href="https://www.linkedin.com/in/harsh-mishra-0493b336b/" target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        <h3>LinkedIn</h3>
+        <p>Professional network & career updates.</p>
+      </a>
+
+      <a href="https://github.com/Harsh596" target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>Project repositories & collaborations.</p>
+      </a>
+
+      <a href="mailto:hmish2025@gmail.com?subject=Hello%20Harsh&body=Hi%20Harsh,%0A%0AI%20wanted%20to%20reach%20out%20about..." target="_blank" class="profile-card">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+        <h3>Gmail</h3>
+        <p>Or you can just email me at <strong>hmish2025@gmail.com</strong></p>
+      </a>
+    </div>
+  </section>
+
+
+  <footer>
+    © 2025 Harsh Mishra 
+  </footer>
+
+</body>
+</html>
